@@ -1,6 +1,6 @@
 #base image
 FROM openjdk:11
-COPY . /src/java
-WORKDIR /src/java
+COPY . /home/dsdoptimize/TrafficViolationSystem
+WORKDIR /home/dsdoptimize/TrafficViolationSystem
 RUN ["javac", "*.java"]
 ENTRYPOINT ["java", "TicketingServer"]

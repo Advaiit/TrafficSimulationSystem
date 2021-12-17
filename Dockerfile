@@ -2,5 +2,10 @@
 FROM openjdk:11
 COPY . /home/dsdoptimize/TrafficViolationSystem
 WORKDIR /home/dsdoptimize/TrafficViolationSystem
-RUN ["javac", "Event.java EventQueue.java EventProcessingUtility.java EventProcessor.java Listener.java TicketingServer.java"]
+RUN ["javac", "Event.java"]
+RUN ["javac", "EventQueue.java"]
+RUN ["javac", "EventProcessingUtility.java"]
+RUN ["javac", "EventProcessor.java"]
+RUN ["javac", "Listener.java"]
+RUN ["javac", "TicketingServer.java"]
 ENTRYPOINT ["java", "TicketingServer"]
